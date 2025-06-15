@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",       // Display name in the debug dropdown
+            "type": "debugpy",                              // VSCode uses debugpy for Python debugging
+            "request": "launch",                            // Launch the program directly (not attach)
+            "program": "${file}",                           // Run the currently opened Python file
+            "console": "integratedTerminal",                // Show output in VSCode's terminal
+            "subProcess": true,                             // Debug child processes if spawned
+            "justMyCode": false,                            // Debug both your code and libraries
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0,1"               // Make only GPU 0 and 1 visible to the program
+            },
+            "args": []                                      // You can provide command-line args here
+        }
+    ]
+}

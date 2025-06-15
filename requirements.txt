@@ -1,0 +1,9 @@
+tiktoken
+gdown
+transformers
+huggingface_hub
+sentencepiece
+blobfile
+safetensors>=0.4.4
+
+# pip install -r requirements.txt
